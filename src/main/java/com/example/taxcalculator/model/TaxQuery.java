@@ -5,25 +5,27 @@ public class TaxQuery {
     //attributes
     private String province;
     private int id;
-    private int employmentIncome;
-    private int selfEmploymentIncome;
-    private int capitalGain;
-    private int eligibleDividend;
-    private int ineligibleDividend;
-    private int otherIncome;
-    private int deductionRRSP;
-    private int incomeTaxPaid;
+    private double employmentIncome;
+    private double selfEmploymentIncome;
+    private double capitalGain;
+    private double eligibleDividend;
+    private double nonEligibleDividend;
+    private double otherIncome;
+    private double deductionRRSP;
+    private double incomeTaxPaid;
 
-    //constructor
-    public TaxQuery(String province, int id, int employmentIncome, int selfEmploymentIncome, int capitalGain, int eligibleDividend,
-                    int ineligibleDividend, int otherIncome, int deductionRRSP, int incomeTaxPaid) {
+    //constructors
+
+
+    public TaxQuery(String province, int id, double employmentIncome, double selfEmploymentIncome, double capitalGain,
+                    double eligibleDividend, double nonEligibleDividend, double otherIncome, double deductionRRSP, double incomeTaxPaid) {
         this.province = province;
         this.id = id;
         this.employmentIncome = employmentIncome;
         this.selfEmploymentIncome = selfEmploymentIncome;
         this.capitalGain = capitalGain;
         this.eligibleDividend = eligibleDividend;
-        this.ineligibleDividend = ineligibleDividend;
+        this.nonEligibleDividend = nonEligibleDividend;
         this.otherIncome = otherIncome;
         this.deductionRRSP = deductionRRSP;
         this.incomeTaxPaid = incomeTaxPaid;
@@ -49,67 +51,67 @@ public class TaxQuery {
         this.id = id;
     }
 
-    public int getEmploymentIncome() {
+    public double getEmploymentIncome() {
         return employmentIncome;
     }
 
-    public void setEmploymentIncome(int employmentIncome) {
+    public void setEmploymentIncome(double employmentIncome) {
         this.employmentIncome = employmentIncome;
     }
 
-    public int getSelfEmploymentIncome() {
+    public double getSelfEmploymentIncome() {
         return selfEmploymentIncome;
     }
 
-    public void setSelfEmploymentIncome(int selfEmploymentIncome) {
+    public void setSelfEmploymentIncome(double selfEmploymentIncome) {
         this.selfEmploymentIncome = selfEmploymentIncome;
     }
 
-    public int getCapitalGain() {
+    public double getCapitalGain() {
         return capitalGain;
     }
 
-    public void setCapitalGain(int capitalGain) {
+    public void setCapitalGain(double capitalGain) {
         this.capitalGain = capitalGain;
     }
 
-    public int getEligibleDividend() {
+    public double getEligibleDividend() {
         return eligibleDividend;
     }
 
-    public void setEligibleDividend(int eligibleDividend) {
+    public void setEligibleDividend(double eligibleDividend) {
         this.eligibleDividend = eligibleDividend;
     }
 
-    public int getIneligibleDividend() {
-        return ineligibleDividend;
+    public double getNonEligibleDividend() {
+        return nonEligibleDividend;
     }
 
-    public void setIneligibleDividend(int ineligibleDividend) {
-        this.ineligibleDividend = ineligibleDividend;
+    public void setNonEligibleDividend(double nonEligibleDividend) {
+        this.nonEligibleDividend = nonEligibleDividend;
     }
 
-    public int getOtherIncome() {
+    public double getOtherIncome() {
         return otherIncome;
     }
 
-    public void setOtherIncome(int otherIncome) {
+    public void setOtherIncome(double otherIncome) {
         this.otherIncome = otherIncome;
     }
 
-    public int getDeductionRRSP() {
+    public double getDeductionRRSP() {
         return deductionRRSP;
     }
 
-    public void setDeductionRRSP(int deductionRRSP) {
+    public void setDeductionRRSP(double deductionRRSP) {
         this.deductionRRSP = deductionRRSP;
     }
 
-    public int getIncomeTaxPaid() {
+    public double getIncomeTaxPaid() {
         return incomeTaxPaid;
     }
 
-    public void setIncomeTaxPaid(int incomeTaxPaid) {
+    public void setIncomeTaxPaid(double incomeTaxPaid) {
         this.incomeTaxPaid = incomeTaxPaid;
     }
 }

@@ -6,6 +6,7 @@ package com.example.taxcalculator.Controller;
   Date: 23 Mar 2020
 */
 
+import com.example.taxcalculator.model.FederalTax;
 import com.example.taxcalculator.model.TaxQuery;
 import com.example.taxcalculator.model.TaxResult;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +21,14 @@ public class TaxCalculatorController {
         //creates a log
         @PostMapping("/query")
         public Optional<TaxResult> CalculateTax(@Valid @RequestBody TaxQuery taxQuery){
-
-
             TaxResult taxResult = new TaxResult();
 
-            return Optional.of(taxResult);
+            //calculate taxes
+            double federalTax = FederalTax.calculateFederalTax(taxQuery);
 
+            //update result object
+            taxResult.setFederalTax(federalTax);
+            //return the results
+            return Optional.of(taxResult);
         }
 }
