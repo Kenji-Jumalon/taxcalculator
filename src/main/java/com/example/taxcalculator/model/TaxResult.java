@@ -3,19 +3,19 @@ package com.example.taxcalculator.model;
 public class TaxResult {
 
     //attributes
-    private int totalIncome;
-    private int federalTax;
-    private int provincialTax;
-    private int premiumCPPEI;
-    private int totalTax;
-    private int afterTaxRate;
-    private float averageTaxRate;
-    private float marginalTaxRate;
+    private double taxableIncome;
+    private double federalTax;
+    private double provincialTax;
+    private double premiumCPPEI;
+    private double totalTax;
+    private double afterTaxRate;
+    private double averageTaxRate;
+    private double marginalTaxRate;
 
     //constructor
-    public TaxResult(int totalIncome, int federalTax, int provincialTax, int premiumCPPEI, int totalTax, int afterTaxRate,
-                     float averageTaxRate, float marginalTaxRate) {
-        this.totalIncome = totalIncome;
+    public TaxResult(double taxableIncome, double federalTax, double provincialTax, double premiumCPPEI,
+                     double totalTax, double afterTaxRate, double averageTaxRate, double marginalTaxRate) {
+        this.taxableIncome = taxableIncome;
         this.federalTax = federalTax;
         this.provincialTax = provincialTax;
         this.premiumCPPEI = premiumCPPEI;
@@ -29,67 +29,67 @@ public class TaxResult {
     }
 
     //getters and setters
-    public int getTotalIncome() {
-        return totalIncome;
+    public double getTaxableIncome() {
+        return taxableIncome;
     }
 
-    public void setTotalIncome(int totalIncome) {
-        this.totalIncome = totalIncome;
+    public void setTaxableIncome(double taxableIncome) {
+        this.taxableIncome = taxableIncome;
     }
 
-    public int getFederalTax() {
+    public double getFederalTax() {
         return federalTax;
     }
 
-    public void setFederalTax(int federalTax) {
+    public void setFederalTax(double federalTax) {
         this.federalTax = federalTax;
     }
 
-    public int getProvincialTax() {
+    public double getProvincialTax() {
         return provincialTax;
     }
 
-    public void setProvincialTax(int provincialTax) {
+    public void setProvincialTax(double provincialTax) {
         this.provincialTax = provincialTax;
     }
 
-    public int getPremiumCPPEI() {
+    public double getPremiumCPPEI() {
         return premiumCPPEI;
     }
 
-    public void setPremiumCPPEI(int premiumCPPEI) {
+    public void setPremiumCPPEI(double premiumCPPEI) {
         this.premiumCPPEI = premiumCPPEI;
     }
 
-    public int getTotalTax() {
+    public double getTotalTax() {
         return totalTax;
     }
 
-    public void setTotalTax(int totalTax) {
+    public void setTotalTax(double totalTax) {
         this.totalTax = totalTax;
     }
 
-    public int getAfterTaxRate() {
+    public double getAfterTaxRate() {
         return afterTaxRate;
     }
 
-    public void setAfterTaxRate(int afterTaxRate) {
+    public void setAfterTaxRate(double afterTaxRate) {
         this.afterTaxRate = afterTaxRate;
     }
 
-    public float getAverageTaxRate() {
+    public double getAverageTaxRate() {
         return averageTaxRate;
     }
 
-    public void setAverageTaxRate(float averageTaxRate) {
+    public void setAverageTaxRate(double averageTaxRate) {
         this.averageTaxRate = averageTaxRate;
     }
 
-    public float getMarginalTaxRate() {
+    public double getMarginalTaxRate() {
         return marginalTaxRate;
     }
 
-    public void setMarginalTaxRate(float marginalTaxRate) {
+    public void setMarginalTaxRate(double marginalTaxRate) {
         this.marginalTaxRate = marginalTaxRate;
     }
 }
