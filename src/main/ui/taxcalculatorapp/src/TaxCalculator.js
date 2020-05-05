@@ -11,23 +11,43 @@ class TaxCalculator extends Component {
                 </div>
                 <div>
                     <form>
-                        <h4>Income & Deductions</h4>
-                        <label>Employment income</label>
-                        <input type="text"/>
-                        <label>Self-employment income</label>
-                        <input type="text"/>
-                        <label>Capital gains</label>
-                        <input type="text"/>
-                        <label>Eligible dividends</label>
-                        <input type="text"/>
-                        <label>Ineligible dividends</label>
-                        <input type="text"/>
-                        <label>Other income</label>
-                        <input type="text"/>
-                        <label>RRSP deduction</label>
-                        <input type="text"/>
-                        <label>Income taxes paid</label>
-                        <input type="text"/>
+                        <div>
+                            <h4>Income & Deductions</h4>
+                            <label>Employment income</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Self-employment income</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Capital gains</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Eligible dividends</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Ineligible dividends</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Other income</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>RRSP deduction</label>
+                            <input type="text" placeholder={"$"}/>
+                            <label>Income taxes paid</label>
+                            <input type="text" placeholder={"$"}/>
+                        </div>
+                        <div>
+                            <h4>Results</h4>
+                            <span>Total income</span>
+                            <span>$ 0</span>
+                            <span>Federal tax</span>
+                            <span>$ 0</span>
+                            <span>Provincial tax</span>
+                            <span>$ 0</span>
+                            <span>Total tax</span>
+                            <span>$ 0</span>
+                            <span>After-tax income</span>
+                            <span>$ 0</span>
+                            <span>Average tax rate</span>
+                            <span>0.00 %</span>
+                            <span>Marginal tax rate</span>
+                            <span>0.00 %</span>
+                        </div>
+
                     </form>
                 </div>
 
