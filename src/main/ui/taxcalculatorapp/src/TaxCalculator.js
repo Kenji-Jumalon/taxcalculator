@@ -14,24 +14,40 @@ class TaxCalculator extends Component {
                     <form>
                         <Container>
                             <Row>
-                                <Col xs={6}>
+                                <Col xs={6} id={"incomes"}>
                                     <h4>Income & Deductions</h4>
-                                    <label>Employment income</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Self-employment income</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Capital gains</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Eligible dividends</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Ineligible dividends</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Other income</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>RRSP deduction</label>
-                                    <input type="text" placeholder={"$"}/>
-                                    <label>Income taxes paid</label>
-                                    <input type="text" placeholder={"$"}/>
+                                    <div>
+                                        <label>Employment income</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Self-employment income</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Capital gains</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Eligible dividends</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Ineligible dividends</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Other income</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>RRSP deduction</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
+                                    <div>
+                                        <label>Income taxes paid</label>
+                                        <input type="text" placeholder={"$"}/>
+                                    </div>
                                 </Col>
                                 <Col xs={6}>
                                     <h4>Results</h4>

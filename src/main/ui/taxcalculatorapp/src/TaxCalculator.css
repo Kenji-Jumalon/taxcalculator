@@ -10,7 +10,16 @@
     background: #f2f2f2;
 }
 
-Col > label {
-    float: left;
-    display: block;
+div label {
+    margin-left: 0px;
+    text-align: left;
+}
+
+div input {
+    float: right;
+}
+#incomes {
+    text-align: left;
+    padding: 10px;
+    margin: 0;
 }
