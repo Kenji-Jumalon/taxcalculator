@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap';
+import "./TaxCalculator.css"
 
 class TaxCalculator extends Component {
     render() {
         return(
-            <div>
+            <div id={"taxcalculator"}>
                 <div>
                     <h1>Tax Calculator</h1>
                     <p>Use our simple calculator to quickly estimate your 2020 federal and provincial taxes.</p>
