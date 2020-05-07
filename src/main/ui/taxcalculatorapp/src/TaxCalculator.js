@@ -49,22 +49,36 @@ class TaxCalculator extends Component {
                                         <input type="text" placeholder={"$"}/>
                                     </div>
                                 </Col>
-                                <Col xs={6}>
+                                <Col xs={6} id={"results"}>
                                     <h4>Results</h4>
-                                    <span>Total income</span>
-                                    <span>$ 0</span>
-                                    <span>Federal tax</span>
-                                    <span>$ 0</span>
-                                    <span>Provincial tax</span>
-                                    <span>$ 0</span>
-                                    <span>Total tax</span>
-                                    <span>$ 0</span>
-                                    <span>After-tax income</span>
-                                    <span>$ 0</span>
-                                    <span>Average tax rate</span>
-                                    <span>0.00 %</span>
-                                    <span>Marginal tax rate</span>
-                                    <span>0.00 %</span>
+                                    <div>
+                                        <label>Total income</label>
+                                        <span>$ 0</span>
+                                    </div>
+                                    <div>
+                                        <label>Federal tax</label>
+                                        <span>$ 0</span>
+                                    </div>
+                                    <div>
+                                        <label>Provincial tax</label>
+                                        <span>$ 0</span>
+                                    </div>
+                                    <div>
+                                        <label>Total tax</label>
+                                        <span>$ 0</span>
+                                    </div>
+                                    <div>
+                                        <label>After-tax income</label>
+                                        <span>$ 0</span>
+                                    </div>
+                                    <div>
+                                        <label>Average tax rate</label>
+                                        <span>0.00 %</span>
+                                    </div>
+                                    <div>
+                                        <label>Marginal tax rate</label>
+                                        <span>0.00 %</span>
+                                    </div>
                                 </Col>
                             </Row>
                         </Container>
